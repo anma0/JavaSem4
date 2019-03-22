@@ -95,7 +95,7 @@ public class DrawingFractal extends Application {
         Image fractal = imgView.getImage();
         File outputFile = new File(dir.getAbsolutePath());
 //        BufferedImage imageRGB = new BufferedImage((int)fractal.getWidth(), (int)fractal.getHeight(), BufferedImage.TYPE_INT_RGB);
-//        SwingFXUtils.fromFXImage(fractal, imageRGB);
+//        SwingFXUtils.fromFXImage(fractal, imageRGB); !!!!!!!!!!!!!!!!!!!!!!!!!!!
         try {
             ImageIO.write(SwingFXUtils.fromFXImage(fractal, null), "png", outputFile);
         } catch (IOException e) {
