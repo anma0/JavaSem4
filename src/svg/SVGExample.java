@@ -21,7 +21,9 @@ public class SVGExample {
         g.set("transform", "translate(150, 150)");
         Tag gClose = new Tag("g", TagType.CLOSE);
 
-        try (SVG svg = new SVG("c.svg", 300, 300)) {
+        RedCircle rc = new RedCircle();
+
+        try (SVG svg = new SVG("transform.svg", 300, 300)) {
             svg.addTag(rect1);
             svg.addTag(rect2);
             svg.addTag(g);
@@ -31,5 +33,16 @@ public class SVGExample {
         } catch (Exception e) {
         System.out.println("Ошибка записи в файл");
         }
+
+        RedCircle c = new RedCircle();
+        SmallSquare sq = new SmallSquare();
+        try (SVG svg = new SVG("d.svg", 300, 300)){
+            c.draw(svg);
+            sq.draw(svg);
+
+        } catch (Exception e) {
+            System.out.println("Ошибка записи в файл 2");
+        }
+
     }
 }
