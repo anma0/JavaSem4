@@ -10,7 +10,7 @@ public class PropertiesFileExample {
 
     //удобный способ хранить настройки в файле
     public static void main(String[] args) throws IOException {
-        //класс Properties - удобный способ хранить настройки программы, сохранярть, загружать их из файла
+        //класс Properties - удобный способ хранить настройки программы, сохранять, загружать их из файла
 
         Properties p = new Properties();
         //метод load позволяет загрузить настройки

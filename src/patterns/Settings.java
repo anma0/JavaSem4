@@ -20,6 +20,6 @@ public class Settings {
     }
 
     public String getUserName(){
-        return "Ananasias";
+        return "Nana";
     }
 }

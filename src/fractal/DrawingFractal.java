@@ -29,7 +29,6 @@ public class DrawingFractal extends Application {
 
     private Pane mainPane;
     private ImageView imgView = new ImageView();
-    //private Button saveButton = new Button("Save this");
     private FileChooser fileChooser = new FileChooser();
 
     private Fractal fractal = new Mandelbrot1();
@@ -83,7 +82,13 @@ public class DrawingFractal extends Application {
                     File dir = fileChooser.showSaveDialog(primaryStage);
                     if (dir != null)
                         saveImage(dir);
-                default:
+                case DIGIT1:
+                    palette = new GradientBW();
+                    drawFractal();
+                    break;
+                case DIGIT2:
+                    palette = new HSBPalette();
+                    drawFractal();
                     break;
             }
         });
