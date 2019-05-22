@@ -2,7 +2,7 @@ package svg;
 
 public class SVGExample {
     public static void main(String[] args) {
-        //SVG svg = null; L00K
+        //SVG svg = null; L00K AT ME
         Tag rect1 = new Tag("rect");
         rect1.set("x", "10");
         rect1.set("y", "10");
